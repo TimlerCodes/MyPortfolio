@@ -8,8 +8,10 @@
 }
 
 body {
-    background-color: #f4f4f9; /* Soft light grey background */
-    color: #333333;             /* Dark grey text for readability */
+    background-color: #f4f4f9;
+    /* Soft light grey background */
+    color: #333333;
+    /* Dark grey text for readability */
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
     display: flex;
@@ -31,7 +33,8 @@ body {
 
 /* 3. Typography Styles */
 h1 {
-    color: #2c3e50; /* Professional dark blue/grey */
+    color: #2c3e50;
+    /* Professional dark blue/grey */
     font-size: 2rem;
     margin-bottom: 1rem;
 }
@@ -42,11 +45,7 @@ p {
     margin-bottom: 1.5rem;
 }
 
-input {
-    color: #666666;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-}
+
 
 /* 4. Optional: Simple Button/Link Style */
 .btn {
@@ -61,4 +60,27 @@ input {
 
 .btn:hover {
     background-color: #2980b9;
+}
+
+/* =========================
+   Custom Scrollbar Styling
+   ========================= */
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e0ffff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg,
+            #00bcd4,
+            #008cff,
+            #6a5acd);
+    border-radius: 10px;
+    border: 3px solid #e0ffff;
+    transition: background 0.3s ease;
 }
